@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Bookmark landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  
+</head>
+<body>
+  <header>
+  <nav>
+    <div class="container nav">
+    <img src="./images/logo-bookmark.svg" alt="">
+    <ul>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Contact</a></li>
+      <li class="btn btn-danger btnx"><a href="#" style="color: #fff">Login</a></li>
+    </ul>
+  </div>
+  </nav>
+
+
+    <div class="container">
+      <div class="row main">
+        <div class="col-md-6 main1">
+          <h1>A Simple Bookmark Manager</h1>
+          <p>
+            A clean and simple interface to organize your favourite websites. Open a new 
+            browser tab and see your sites load instantly. Try it for free.
+          </p>
+          <button class="btn btn1">Get it on Chrome</button>
+          <button class="btn btn2">Get it on Firefox</button>
+        </div>
+
+        <div class="col-md-6 ill1">
+          <img src="./images/illustration-hero.svg" alt="">
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <section class="features">
+    <h2>Features</h2>
+    <p>
+      Our aim is to make it quick and easy for you to access your favourite websites. 
+  Your bookmarks sync between your devices so you can access them on the go.
+    </p>
+    
+    
+    
+    <div class="sort">
+      <ul>  
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">Simple Bookmarking</li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1">Speedy Searching</li>
+        <li id="sp1" data-target="#carouselExampleIndicators" data-slide-to="2">Easy Sharing</li>
+      </ul> 
+    </div>
+
+
+
+    <div id="carouselExampleIndicators" class="carousel slide fea" data-ride="carousel">
+      <ol class="carousel-indicators">
+      </ol>
+      
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 content">
+                <img src="./images/illustration-features-tab-1.svg" class="fimg img img-responsive" alt="">
+              </div>
+        
+              <div class="col-lg-6 my-auto fcontent">
+                <h3>Bookmark in one click</h3>
+                <p>
+                  Organize your bookmarks however you like. Our simple drag-and-drop interface 
+          gives you complete control over how you manage your favourite sites.
+                </p>
+                <button class="btn btn1">More Info</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 content">
+                <img src="./images/illustration-features-tab-2.svg" class="fimg img img-responsive" alt="">
+              </div>
+        
+              <div class="col-lg-6 my-auto fcontent">
+                <h3>Intelligent search</h3>
+                <p>
+                  Our powerful search feature will help you find saved sites in no time at all. 
+          No need to trawl through all of your bookmarks.
+                </p>
+                <button class="btn btn1">More Info</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 content">
+                <img src="./images/illustration-features-tab-3.svg" class="fimg img img-responsive" alt="">
+              </div>
+        
+              <div class="col-lg-6 my-auto fcontent">
+                <h3>Share your bookmarks</h3>
+                <p>
+                  Easily share your bookmarks and collections with others. Create a shareable 
+          link that you can send at the aclick of a button.
+                </p>
+                <button class="btn btn1">More Info</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+    
+  </section>
+  
+
+  
+
+  
+
+
+
+  <section class="mx-auto">
+    <div class="download">
+      <h3>Download the extension</h3>
+      <p>
+        We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+  got a favourite you’d like us to prioritize.
+      </p>
+    </div>
+
+    <div class="container cards">
+      <div class="cardx">
+        <div class="card-info text-center">
+          <img src="./images/logo-chrome.svg" alt="">
+          <h4>
+            Add to Chrome
+        </h4>
+        <p>Minimum version 62</p>
+      </div>
+      <img src="./images/bg-dots.svg" alt="bg" aria-hidden="true">
+      <div class="card__info text-center m-2 mb-3">
+          <a href="" class="btn btn-primary" aria-label="Add & install Chrome extension">Add &
+            Install Extension</a>
+        </div>
+      </div>
+
+      <div class="cardx card2">
+        <div class="card-info text-center">
+          <img src="./images/logo-firefox.svg" alt="">
+          <h4>
+            Add to Firefox
+          </h4>
+          <p>Minimum version 62</p>
+      </div>
+      <img src="./images/bg-dots.svg" alt="bg" aria-hidden="true">
+      <div class="card__info text-center m-2 mb-3">
+          <a href="" class="btn btn-primary mx-auto" aria-label="Add & install Chrome extension">Add &
+            Install Extension</a>
+        </div>
+      </div>
+
+      <div class="cardx card3">
+        <div class="card-info text-center">
+          <img src="./images/logo-opera.svg" alt="">
+          <h4>
+            Add to Opera
+          </h4>
+            <p>Minimum version 62</p>
+        
+      </div>
+      <img src="./images/bg-dots.svg" alt="bg" aria-hidden="true">
+      <div class="card__info text-center m-2 mb-3">
+          <a href="" class="btn btn-primary" aria-label="Add & install Chrome extension">Add &
+            Install Extension</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+  <section>
+    <div class="question">
+      <h3>Frequently Asked Questions</h3>
+      <p>
+        Here are some of our FAQs. If you have any other questions you’d like 
+  answered please feel free to email us.
+      </p>
+    </div>
+    <div class="container accx">
+      <div class="accordion">
+        <div class="accordion-item">
+          <button id="accordion-button-1" class="accordion-butto" aria-expanded="false"><span class="accordion-title">What is Bookmark?</span><span class="icon" aria-hidden="true"><img src="./images/icon-arrow.svg" id="bh" alt=""></span></button>
+          <div class="accordion-content" id="accordion-content-1">
+            <p id="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+              justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-2" class="accordion-butto" aria-expanded="false"><span class="accordion-title">How can I request a new browser?</span><span class="icon" aria-hidden="true"><img src="./images/icon-arrow.svg" id="bh" alt=""></span></button>
+          <div class="accordion-content" id="accordion-content-2">
+            <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+              Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+              ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+              Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-3" class="accordion-butto" aria-expanded="false"><span class="accordion-title">Is there a mobile app?</span><span class="icon" aria-hidden="true"><img src="./images/icon-arrow.svg" id="bh" alt=""></span></button>
+          <div class="accordion-content" id="accordion-content-3">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-4" class="accordion-butto" aria-expanded="false"><span class="accordion-title">What about other Chromium browsers?</span><span class="icon" aria-hidden="true"><img src="./images/icon-arrow.svg" id="bh" alt=""></span></button>
+          <div class="accordion-content" id="accordion-content-4">
+            <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+              vitae neque eget nisl gravida pellentesque non ut velit.
+              More Info</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section>
+    <div class="container-fluid mx-auto text-center slast">
+      <p style="color: #fff; letter-spacing: 6px;font-size: 12px;text-transform: uppercase;">35,000+ already joined</p>
+      <h2>Stay up-to-date with what <br/>we’re doing</h2>
+      <form action="" class="fgroup">
+        <input class="mx-auto" type="text" placeholder="Enter your Email address" required>
+        <button class="btn btn-danger mx-auto ml-md-2">Contact us</button>
+      </form>
+    </div>
+  </section>
+  
+  <footer class="footer">
+    <div class="container-fluid" style="background-color: hsl(229, 31%, 21%);">
+      <div class="container">
+      <div class="row">
+      <div class="col-md-12 folast">
+        <ul class="col-12 col-md-6 child">
+          <li><a href="" class="bfb"><img src="./images/logo-back.svg" style="color: #fff;" alt=""></a></li>
+          <li><a href="">Features</a></li>
+          <li><a href="">Pricing</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+        <ul class="icons">
+          <li><a href=""><img src="./images/icon-facebook.svg" alt=""></a></li>
+          <li><a href=""><img src="./images/icon-twitter.svg" alt=""></a></li>
+        </ul>
+      </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="./src/acc.js"></script>
+</body>
+</html>
