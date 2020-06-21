@@ -60,17 +60,17 @@
     
     
     
-    <div class="sort">
-      <ul>  
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">Simple Bookmarking</li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1">Speedy Searching</li>
-        <li id="sp1" data-target="#carouselExampleIndicators" data-slide-to="2">Easy Sharing</li>
+    <div class="sort container-fluid">
+      <ul class="slider">  
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="ride1">Simple Bookmarking</li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1" class="ride2">Speedy Searching</li>
+        <li id="sp1" data-target="#carouselExampleIndicators" data-slide-to="2" class="ride3">Easy Sharing</li>
       </ul> 
     </div>
 
 
 
-    <div id="carouselExampleIndicators" class="carousel slide fea" data-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide fea" data-ride="carousel" data-interval="false">
       <ol class="carousel-indicators">
       </ol>
       
@@ -215,14 +215,14 @@
     <div class="container accx">
       <div class="accordion">
         <div class="accordion-item">
-          <button id="accordion-button-1" class="accordion-butto" aria-expanded="false"><span class="accordion-title">What is Bookmark?</span><span class="icon" aria-hidden="true"><img src="./images/icon-arrow.svg" id="bh" alt=""></span></button>
+          <button id="accordion-button-1" class="accordion-butto" aria-expanded="false"><span class="accordion-title">What is Bookmark?</span><span class="icon" aria-hidden="true"><img src="./images/icon-arrow.svg" id="up" alt=""><img src="./images/icon-arrowd.svg" id="down" alt=""></span></button>
           <div class="accordion-content" id="accordion-content-1">
             <p id="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
               justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
           </div>
         </div>
         <div class="accordion-item">
-          <button id="accordion-button-2" class="accordion-butto" aria-expanded="false"><span class="accordion-title">How can I request a new browser?</span><span class="icon" aria-hidden="true"><img src="./images/icon-arrow.svg" id="bh" alt=""></span></button>
+          <button id="accordion-button-2" class="accordion-butto" aria-expanded="false"><span class="accordion-title">How can I request a new browser?</span><span class="icon" aria-hidden="true"><img src="./images/icon-arrow.svg" id="up2" alt=""><img src="./images/icon-arrowd.svg" id="down2" alt=""></span></button>
           <div class="accordion-content" id="accordion-content-2">
             <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
               Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
@@ -231,13 +231,13 @@
           </div>
         </div>
         <div class="accordion-item">
-          <button id="accordion-button-3" class="accordion-butto" aria-expanded="false"><span class="accordion-title">Is there a mobile app?</span><span class="icon" aria-hidden="true"><img src="./images/icon-arrow.svg" id="bh" alt=""></span></button>
+          <button id="accordion-button-3" class="accordion-butto" aria-expanded="false"><span class="accordion-title">Is there a mobile app?</span><span class="icon" aria-hidden="true"><img src="./images/icon-arrow.svg" id="up3" alt=""><img src="./images/icon-arrowd.svg" id="down3" alt=""></span></button>
           <div class="accordion-content" id="accordion-content-3">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
           </div>
         </div>
         <div class="accordion-item">
-          <button id="accordion-button-4" class="accordion-butto" aria-expanded="false"><span class="accordion-title">What about other Chromium browsers?</span><span class="icon" aria-hidden="true"><img src="./images/icon-arrow.svg" id="bh" alt=""></span></button>
+          <button id="accordion-button-4" class="accordion-butto" aria-expanded="false"><span class="accordion-title">What about other Chromium browsers?</span><span class="icon" aria-hidden="true"><img src="./images/icon-arrow.svg" id="up4" alt=""><img src="./images/icon-arrowd.svg" id="down4" alt=""></span></button>
           <div class="accordion-content" id="accordion-content-4">
             <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
               vitae neque eget nisl gravida pellentesque non ut velit.
@@ -248,13 +248,12 @@
     </div>
   </section>
   
-
   <section>
     <div class="container-fluid mx-auto text-center slast">
       <p style="color: #fff; letter-spacing: 6px;font-size: 12px;text-transform: uppercase;">35,000+ already joined</p>
       <h2>Stay up-to-date with what <br/>we’re doing</h2>
       <form action="" class="fgroup">
-        <input class="mx-auto" type="text" placeholder="Enter your Email address" required>
+        <input class="mx-auto" id="inp" type="text" placeholder="Enter your Email address" required>
         <button class="btn btn-danger mx-auto ml-md-2">Contact us</button>
       </form>
     </div>

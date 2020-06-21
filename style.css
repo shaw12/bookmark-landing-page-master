@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 body{
     font-family: 'Rubik', sans-serif;
@@ -98,7 +99,7 @@ ul{
   .sort ul li {
     cursor: pointer;
     color: hsl(229, 8%, 60%);
-    border-bottom: 1px solid hsl(229, 8%, 60%);
+    border-bottom: 1px solid hsl(229, 8%, 60%) !important;
     padding: 0 30px 5px 30px;
     line-height: 2;
     text-align: center;
@@ -110,7 +111,7 @@ ul{
     color: red;
   }
   
-  .sort ul li.active{
+  .sort ul li.activex {
     border-bottom: 2px solid hsl(0, 94%, 66%) !important;
     color: black !important;
   }
@@ -118,7 +119,11 @@ ul{
     border-bottom: 2px solid black !important;
     color: black !important;
   }
-
+  .activex{
+    border-bottom: 2px solid hsl(0, 94%, 66%) !important;
+    color: black !important;
+    z-index: 100;
+  }
 
 .features,
 .download,
@@ -227,7 +232,7 @@ ul{
     right: 0%;
 }
 
-.accx {
+.accordion {
     margin: 0 auto;
     padding: 4rem;
     width: 48rem;
@@ -265,95 +270,42 @@ ul{
     display: flex !important; 
     justify-content: space-between !important;
 }
+.fa{
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    color: #FA5757 !important;
+}
 
-/*
-
-.accx {
-    margin: 0 auto;
-    padding: 4rem;
-    width: 48rem;
-  }
-  .accordion-item {
-    border-bottom: 1px solid #e5e5e5;
-  }
-    .accordion-item button[aria-expanded='true'] {
-      border-bottom: 1px solid #03b5d2;
+@media only screen and (max-width: 768px){
+    html,body{
+        overflow-x: hidden;
     }
-    .accordion-item button {
-        position: relative;
-        display: block;
-        text-align: left;
-        width: 100%;
-        padding: 1em 0;
-        color: #7288a2;
-        font-size: 1.15rem;
-        font-weight: 400;
-        border: none;
-        background: none;
-        outline: none;
-    }
-    .accordion-item button:hover,
-    .accordion-item  button:focus {
-          cursor: pointer;
-          color: #03b5d2;
-     }
-     .accordion-item button::after {
-            cursor: pointer;
-            color: #03b5d2;
-            border: 1px solid #03b5d2;
-          }
-       .accordion-item button[aria-expanded='true'] {
-        color: #03b5d2;
-        }
-            .icon {
-                width: 0;
-            }
-            .icon::after {
-                width: 0;
-              }
-            
-            .accordion-content {
-              opacity: 1;
-              max-height: 9em;
-              transition: all 200ms linear;
-              will-change: opacity, max-height;
-            }
-          
-          .accordion-content {
-            opacity: 0;
-            max-height: 0;
-            
-            transition: opacity 200ms linear, max-height 200ms linear;
-            will-change: opacity, max-height;
-        
-        }
-        .accordion-content p {
-            font-size: 1rem;
-            font-weight: 300;
-            margin: 2em 0;
-          }
-*/
 
-@media (max-width: 768px){
     body{
         margin-right: 0px !important;
-        align-items: center;
-        
-        width: fit-content !important;
+        align-items: center; 
     }
     .main{
         display: flex;
         flex-direction: column-reverse !important;
     }
-    
+    .nav img{
+        margin-top: 30px;
+    }
+    nav ul{
+        display: none !important;
+    }
     header::before {
         content: "";
         position: absolute;
-        width: 70%;
-        height: 50%;
+        width: 60%;
+        height: 40%;
         border-radius: 25% 0 0 25%;
         right: 0%;
-        top: 50%;
+        top: 30%;
         background-color: hsl(231, 69%, 60%);
         z-index: -1;
       }
@@ -380,7 +332,23 @@ ul{
         margin: auto !important;
         
     }
-
+    .slider{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .slider li{
+        border-bottom: 1px solid black !important;
+    }
+    .sort ul li{
+        width: 70% !important;
+    }
+    .accordion{
+        padding: 0% !important;
+        width: 90% !important;
+    }
 
     .fimg{
         float: none;
@@ -491,21 +459,82 @@ ul{
     #sp1{
         margin-right: 50px !important;
     }
+
 }
 @media (max-width: 480px){
-    body{
-        width: fit-content !important;
 
+    body{
+        overflow-x: hidden;
     }
     header::before {
         content: "";
         position: absolute;
-        width: 130%;
-        height: 55%;
+        width: 63%;
+        height: 23%;
         border-radius: 25% 0 0 25%;
-        right: -90%;
-        top: 40%;
+        right: 0%;
+        top: 36%;
         background-color: hsl(231, 69%, 60%);
         z-index: -1;
       }
+    .main1{
+        margin-top: 30px;
+    }
+    .main1 h1{
+        width: 100% !important;
+        font-size: 32px;
+    }
+    .cards{
+        margin-top: 40px;
+       
+    }
+    .cardx{
+        margin-bottom: 30px !important;
+       
+    }
+    .question{
+        margin-top: 80px !important;
+    }
+    .question p{
+        margin-top: 10px;
+    }
+    .accx{
+        margin-top: 20px;
+    }
+}
+@media (min-width: 425px) and (max-width: 480px){
+
+    body{
+        overflow-x: hidden;
+    }
+    header::before {
+        content: "";
+        position: absolute;
+        width: 63%;
+        height: 27%;
+        border-radius: 25% 0 0 25%;
+        right: 0%;
+        top: 36%;
+        background-color: hsl(231, 69%, 60%);
+        z-index: -1;
+      }
+    
+}
+@media (min-width: 770px) and (max-width: 1023px){
+
+    body{
+        overflow-x: hidden;
+    }
+    header::before {
+        content: "";
+        position: absolute;
+        width: 35%;
+        height: 30%;
+        border-radius: 25% 0 0 25%;
+        right: 0%;
+        top: 25%;
+        background-color: hsl(231, 69%, 60%);
+        z-index: -1;
+      }
+    
 }
