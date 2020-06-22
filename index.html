@@ -21,6 +21,8 @@
   <nav>
     <div class="container nav">
     <img src="./images/logo-bookmark.svg" alt="">
+    <span class="hum"><img src="./images/icon-hamburger.svg" alt=""></span>
+    <span class="clos"><img src="./images/icon-close.svg" alt=""></span>
     <ul>
       <li><a href="#">Features</a></li>
       <li><a href="#">Pricing</a></li>
@@ -39,8 +41,10 @@
             A clean and simple interface to organize your favourite websites. Open a new 
             browser tab and see your sites load instantly. Try it for free.
           </p>
-          <button class="btn btn1">Get it on Chrome</button>
-          <button class="btn btn2">Get it on Firefox</button>
+          <div class="butts">
+            <button class="btn btn1">Get it on Chrome</button>
+            <button class="btn btn2">Get it on Firefox</button>
+          </div>
         </div>
 
         <div class="col-md-6 ill1">
@@ -253,8 +257,12 @@
       <p style="color: #fff; letter-spacing: 6px;font-size: 12px;text-transform: uppercase;">35,000+ already joined</p>
       <h2>Stay up-to-date with what <br/>we’re doing</h2>
       <form action="" class="fgroup">
-        <input class="mx-auto" id="inp" type="text" placeholder="Enter your Email address" required>
-        <button class="btn btn-danger mx-auto ml-md-2">Contact us</button>
+        <div class="inputx ml-md-auto">
+          <input type="email" class="email-input" id="inp" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="please enter valid email [test@test.com]." placeholder="Enter your Email address" required>
+          <p class="error-msg mr-auto" id="err"> Whoops! make sure it's an email</p>
+          <p class="valid-msg mr-auto" id="nrr"> Thanks for Contacting Us</p>            
+        </div>
+        <button class="btn btn-danger mr-md-auto ml-md-2" id="submit">Contact us</button>
       </form>
     </div>
   </section>
@@ -290,5 +298,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="./src/acc.js"></script>
+  <script src="./src/script.js"></script>
 </body>
 </html>

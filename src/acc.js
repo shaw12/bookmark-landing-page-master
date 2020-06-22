@@ -85,4 +85,15 @@ $(document).ready(function(){
     $('.ride2').removeClass('activex');
     $('.ride1').removeClass('activex');
   })
+  
+  $('.clos').hide();
+  $('.hum').on('click', () => {
+    $('.hum').toggle();
+    $('.clos').toggle();
+  })
+  $('.clos').on('click', () => {
+    $('.clos').toggle();
+    $('.hum').toggle();
+  })
 });
+
