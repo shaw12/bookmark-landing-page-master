@@ -70,10 +70,7 @@ header::before {
     color: hsl(229, 31%, 21%);
     margin-left: 10px;
 }
-.btnx{
-    padding: 8px 30px;
-    margin-right: 80px !important;
-}
+
 ul{
     list-style-type: none;
 }
@@ -316,15 +313,19 @@ ul{
 }
 
 @media only screen and (min-width: 769px){
-    .nav ul{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .showz{
+        display: block !important;
     }
-    .nav ul li{
+    #listx{
+        display: block;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    #listx li{
         margin-right: 40px;  
     }
-    .nav ul li a{
+    #listx li a{
         text-transform: uppercase;
         text-decoration: none;
         font-size: 12px;
@@ -332,6 +333,19 @@ ul{
     }
     .hum{
         display: none;
+    }
+    .btnx{
+        padding: 8px 30px;
+        margin-right: 80px !important;
+    }
+    .nav-icons{
+        display: none;
+    }
+    .showx{
+        display: none;
+    }
+    .question p{
+        text-align: center;
     }
 }
 
@@ -352,35 +366,90 @@ ul{
         margin-top: 30px;
     }
     nav{
+        padding: 5px 10px;
         background-color: rgba(37,43,70, 0.1);
     }
-    nav ul{
+    #listx{
+        transition: 0.6s ease-in;
+        left: 0 !important;
+        right: 0 !important;
+        top: 0 !important;
+        bottom: 0 !important;
         position: absolute;
         max-width: 100%;
-        
-        min-width: 90%;
+        z-index: 100;
+        min-width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
-        margin-top: 250px !important;
+        padding-top: 60px;
+        background-color:  hsl(229, 31%, 21%);
+        opacity: 0.9;
+        height: 100%;
+    }
+    #listx li{
+        width: 90%;
+        font-size: 24px;
+        margin-top: 20px;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center;
+        text-transform: uppercase;
+        border-top: 1px solid hsl(229, 8%, 60%);
+        padding-top: 20px;
+        margin-left: auto ;
+        margin-right: auto;
+    }
+    #listx li a{
+        color: #fff;
+        opacity: 0.9;
+    }
+    .nav-icons{
+        transition: 0.6s ease-in;
+        position: absolute;
+        width: 100%;
+        bottom: 10%;
+        z-index: 100000;
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .nav-icons li a img{
+        width: 35px;
+        margin-right: 10px;
+    }
+    .cn{
+        padding-bottom: 20px;
+        border-bottom: 1px solid hsl(229, 8%, 60%);
+    }
+    .btnx{
+        background-color: hsl(229, 31%, 21%) !important;
+        border: 2px solid #fff !important;
+        text-align: center !important;
+        font-size: 24px;
+        color: #fff !important;
+       margin-left: 20px !important;
         
     }
-    nav ul li{
-        font-size: 24px;
-        margin-top: 40px;
-        justify-content: center;
-        align-items: center;
-        
+    .showx{
+        z-index: 10000000;
     }
     .hum{
         display: block;
+        z-index: 10000;
+    }
+    .clos{
+        z-index: 10000;
     }
     .active-nav{
         display: block;
     }
     .inactive-nav{
         display: none;
+    }
+    .visi{
+        display: none !important;
     }
     header::before {
         content: "";
@@ -438,9 +507,9 @@ ul{
         float: none;
     }
     .fcontent{
-        width: 90%;
+        width: 100%;
         text-align: center;
-        margin-left: 4% !important;
+        
         margin-top: 50px !important;
     }
     .fcontent p{
@@ -522,9 +591,17 @@ ul{
         display: flex;
         flex-direction: column;
     }
-
+    .cards{
+        height: auto !important;
+    }
     .child li {
         margin-bottom: 15px !important;
+    }
+    .card2{
+        margin-top: 100px !important;
+    }
+    .card3{
+        margin-top: 130px !important;
     }
 }
 

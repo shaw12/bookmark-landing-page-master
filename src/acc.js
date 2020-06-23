@@ -87,13 +87,27 @@ $(document).ready(function(){
   })
   
   $('.clos').hide();
+  $('.nav-icons').hide();
+  $('.showx').hide();
+  $('.listx').addClass('visi');
   $('.hum').on('click', () => {
     $('.hum').toggle();
     $('.clos').toggle();
+    $('#listx').toggle();
+    $('.nav-icons').toggle();
+    $('.showx').toggle();
+    $('.showz').toggle();
+    $('.listx').toggleClass('visi');
   })
   $('.clos').on('click', () => {
     $('.clos').toggle();
     $('.hum').toggle();
+    $('#listx').toggle();
+    $('.nav-icons').toggle();
+    $('.showx').toggle();
+    $('.showz').toggle();
+    $('.listx').toggleClass('visi');
   })
+
 });
 
