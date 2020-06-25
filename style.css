@@ -367,7 +367,6 @@ ul{
     }
     nav{
         padding: 5px 10px;
-        background-color: rgba(37,43,70, 0.1);
     }
     #listx{
         transition: 0.6s ease-in;
@@ -384,7 +383,7 @@ ul{
         justify-content: flex-start;
         align-items: center;
         padding-top: 60px;
-        background-color:  hsl(229, 31%, 21%);
+        background-color: hsl(229, 31%, 21%);
         opacity: 0.9;
         height: 100%;
     }
@@ -628,7 +627,7 @@ ul{
     }
 
 }
-@media (max-width: 480px){
+@media only screen and (max-width: 480px){
 
     body{
         width: 100%;
@@ -639,10 +638,10 @@ ul{
         content: "";
         position: absolute;
         width: 63%;
-        height: 25%;
+        height: 24%;
         border-radius: 25% 0 0 25%;
         right: 0%;
-        top: 36%;
+        top: 35%;
         background-color: hsl(231, 69%, 60%);
         z-index: -1;
       }
