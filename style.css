@@ -718,5 +718,6 @@ ul{
         background-color: hsl(231, 69%, 60%);
         z-index: -1;
       }
-    
+    nav{
+        padding: 40px !important;
 }
