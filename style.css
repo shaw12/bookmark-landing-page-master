@@ -634,19 +634,19 @@ ul{
         overflow-x: hidden;
     }
     
-    header::before {
+     header::before {
         content: "";
         position: absolute;
         width: 63%;
-        height: 24%;
+        height: 23%;
         border-radius: 25% 0 0 25%;
         right: 0%;
-        top: 35%;
+        top: 38%;
         background-color: hsl(231, 69%, 60%);
         z-index: -1;
       }
     .ill1{
-        margin-top: -20px;
+        margin-top: -30px;
     }
     .main1{
         max-width: 100% !important;
